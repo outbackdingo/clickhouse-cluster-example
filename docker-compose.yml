@@ -44,7 +44,7 @@ services:
             ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
 
     clickhouse1:
-        image: yandex/clickhouse-server:19.15.3.6
+        image: yandex/clickhouse-server:latest
         hostname: clickhouse1
         expose:
             - "9000"
@@ -61,7 +61,7 @@ services:
                 hard: 262144
 
     clickhouse2:
-        image: yandex/clickhouse-server:19.15.3.6
+        image: yandex/clickhouse-server:latest
         hostname: clickhouse2
         expose:
             - "9000"
@@ -78,7 +78,7 @@ services:
                 hard: 262144
 
     clickhouse3:
-        image: yandex/clickhouse-server:19.15.3.6
+        image: yandex/clickhouse-server:latest
         hostname: clickhouse3
         expose:
             - "9000"
@@ -95,7 +95,7 @@ services:
                 hard: 262144
 
     clickhouse4:
-        image: yandex/clickhouse-server:19.15.3.6
+        image: yandex/clickhouse-server:latest
         hostname: clickhouse4
         expose:
             - "9000"
